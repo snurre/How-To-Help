@@ -10,6 +10,7 @@ plugins {
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
 kotlin {
+    applyDefaultHierarchyTemplate()
     targetHierarchy.default()
     androidTarget {
         compilations.all {
@@ -97,7 +98,7 @@ android {
         minSdk = 24
         targetSdk = 34
 
-        applicationId = "org.howtohelp.app.androidApp"
+        applicationId = "org.howtohelp.app"
         versionCode = 1
         versionName = "1.0.0"
     }

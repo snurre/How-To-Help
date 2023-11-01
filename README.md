@@ -20,11 +20,3 @@ To run the application on iPhone device/simulator:
 
 ### Browser
 Run the browser application: `./gradlew :composeApp:jsBrowserDevelopmentRun`
-
-[Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable('Path', [EnvironmentVariableTarget]::Machine) + "$($Env:JAVA_HOME)\bin", [EnvironmentVariableTarget]::Machine)
-
-[System.Environment]::SetEnvironmentVariable("JAVA_HOME", "C:\Program Files\Amazon Corretto\jdk17.0.9_8", [System.EnvironmentVariableTarget]::Machine)
-[System.Environment]::GetEnvironmentVariable("JAVA_HOME", [System.EnvironmentVariableTarget]::Machine)
-# ADD "bin += path"
-[System.Environment]::SetEnvironmentVariable("Path", "%JAVA_HOME%\bin;" + [Environment]::GetEnvironmentVariable('Path', [EnvironmentVariableTarget]::Machine), [System.EnvironmentVariableTarget]::Machine)
-[System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::Machine)

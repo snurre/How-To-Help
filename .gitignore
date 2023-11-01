@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/java,jenv,swift,xcode,gradle,kotlin,android,intellij+all,androidstudio,cocoapods
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,jenv,swift,xcode,gradle,kotlin,android,intellij+all,androidstudio,cocoapods
+# Created by https://www.toptal.com/developers/gitignore/api/java,jenv,swift,xcode,gradle,kotlin,android,cocoapods,intellij+all,androidstudio,yarn
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,jenv,swift,xcode,gradle,kotlin,android,cocoapods,intellij+all,androidstudio,yarn
 
 ### Android ###
 # Gradle files
@@ -279,6 +279,23 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+### yarn ###
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+!.yarn/cache
+
+# and uncomment the following lines
+# .pnp.*
+
 ### Gradle ###
 .gradle
 **/build/
@@ -411,4 +428,4 @@ obj/
 
 !/gradle/wrapper/gradle-wrapper.jar
 
-# End of https://www.toptal.com/developers/gitignore/api/java,jenv,swift,xcode,gradle,kotlin,android,intellij+all,androidstudio,cocoapods
+# End of https://www.toptal.com/developers/gitignore/api/java,jenv,swift,xcode,gradle,kotlin,android,cocoapods,intellij+all,androidstudio,yarn
